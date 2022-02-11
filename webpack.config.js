@@ -1,4 +1,4 @@
-const plugins  = require('@babel/preset-env/lib/plugins-compat-data');
+// const plugins  = require('@babel/preset-env/lib/plugins-compat-data');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -49,9 +49,9 @@ module.exports = {
             filename: '[name].css'
         }),
     ],
-    devServer: {
-        allowedHosts: path.join(__dirname, 'dist'),
-        compress: true,
-        port: 3005,
-    }
+    // devServer: {
+    //     allowedHosts: path.join(__dirname, 'dist'),
+    //     compress: true,
+    //     port: 3005,
+    // }
 }
